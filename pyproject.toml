@@ -6,4 +6,5 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fpdf2>=2.8.3",
+    "markdown-pdf>=1.7",
 ]
