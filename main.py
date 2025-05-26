@@ -1,3 +1,4 @@
+"""Obsolete this approach is slow and has so many junks code."""
 from fpdf import FPDF
 from fpdf.enums import XPos, YPos
 
