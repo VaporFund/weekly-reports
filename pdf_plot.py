@@ -1,16 +1,13 @@
 """Original version from https://github.com/Chonlakant/MetaQuote/blob/main/plot_uLINK.ipynb"""
-# Import required libraries
-import pandas as pd
-import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-from datetime import datetime
+import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+from markdown_pdf import MarkdownPdf
+from markdown_pdf import Section
 
 # Set figure aesthetics for better visualization
 plt.style.use('ggplot')
-
-# # This ensures all plots display directly in the notebook
-# %matplotlib inline
 
 # Set higher DPI for sharper in-notebook display
 plt.rcParams['figure.dpi'] = 100
@@ -19,6 +16,7 @@ folder = 'pdf_plot_output_figures'
 BASIC_CHART_FIGURE = f'{folder}/uLINK_price_charts.png'
 TREND_LINES_FIGURE = f'{folder}/uLINK_price_charts_with_trend.png'
 CORRELATION_ANALYSIS_FIGURE = f'{folder}/uLINK_relationship_chart.png'
+
 
 def basic_charts() -> pd.DataFrame:
     """
@@ -78,6 +76,7 @@ def basic_charts() -> pd.DataFrame:
     plt.savefig(BASIC_CHART_FIGURE, dpi=300)
     plt.clf()
     return df
+
 
 def trend_lines(df: pd.DataFrame):
     """
@@ -154,6 +153,7 @@ def trend_lines(df: pd.DataFrame):
     plt.savefig(TREND_LINES_FIGURE, dpi=300)
     plt.clf()
 
+
 def correlation_analysis(df: pd.DataFrame):
     """
     Correlation Analysis
@@ -190,10 +190,32 @@ def correlation_analysis(df: pd.DataFrame):
     plt.clf()
 
 
+def make_pdf():
+    """Use markdown and generate the pdf."""
+    pdf = MarkdownPdf(toc_level=2, optimize=True)
+    basic_chart = f"<img src='{BASIC_CHART_FIGURE}'/>"
+    trend_lines_chart = f"<img src='{TREND_LINES_FIGURE}'/>"
+    correlation_analysis_chart = f"<img src='{CORRELATION_ANALYSIS_FIGURE}'/>"
+
+    # This is bug. Must no ident in the content lines.
+    content = f"""
+### Figure
+{basic_chart}
+{trend_lines_chart}
+{correlation_analysis_chart}
+    """
+    pdf.add_section(Section(content, toc=False))
+
+    pdf.meta["title"] = "price chart"
+    pdf.meta["author"] = "VapourFund"
+    pdf.save("price_chart.pdf")
+
+
 def main():
     df = basic_charts()
     trend_lines(df)
     correlation_analysis(df)
+    make_pdf()
 
 
 if __name__ == "__main__":
