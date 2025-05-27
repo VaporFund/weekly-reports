@@ -6,6 +6,8 @@ import pandas as pd
 from markdown_pdf import MarkdownPdf
 from markdown_pdf import Section
 
+from download_to_csv import main_download_csv
+
 # Set figure aesthetics for better visualization
 plt.style.use('ggplot')
 
@@ -212,6 +214,9 @@ def make_pdf():
 
 
 def main():
+    # download to CSV
+    main_download_csv()
+
     df = basic_charts()
     trend_lines(df)
     correlation_analysis(df)

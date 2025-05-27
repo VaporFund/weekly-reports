@@ -69,7 +69,7 @@ def fetch_data_and_save_to_csv(db_params, sql_query, csv_filepath):
             print("PostgreSQL connection is closed.")
 
 
-def main():
+def main_download_csv():
     """Download the csv file."""
     # --- Configuration ---
     database_parameters = {
@@ -98,4 +98,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main_download_csv()
