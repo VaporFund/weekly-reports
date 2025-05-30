@@ -22,7 +22,7 @@ folder = 'chart_images'
 markdown_folder = 'reports'
 
 # GitHub repository configuration
-GITHUB_REPO_URL = "https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main"
+GITHUB_REPO_URL = "https://raw.githubusercontent.com/VaporFund/weekly-report/main"
 GITHUB_IMAGES_PATH = f"{GITHUB_REPO_URL}/{folder}"
 
 def ensure_folders_exist():
