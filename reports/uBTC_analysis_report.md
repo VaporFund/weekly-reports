@@ -1,6 +1,6 @@
 # uBTC Price Analysis Report
 
-Generated on: 2025-05-30 22:07:59
+Generated on: 2025-05-30 22:11:11
 
 ## Overview
 
@@ -23,19 +23,19 @@ This report provides a comprehensive analysis of uBTC token price data including
 
 The following charts show the basic price trends for uBTC token amount and USDC return over time.
 
-![uBTC Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uBTC_price_charts.png)
+![uBTC Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uBTC_price_charts.png)
 
 ## Enhanced Trend Analysis
 
 These enhanced visualizations include trend lines and annotations highlighting minimum and maximum values.
 
-![uBTC Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uBTC_price_charts_with_trend.png)
+![uBTC Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uBTC_price_charts_with_trend.png)
 
 ## Correlation Analysis
 
 The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9996**.
 
-![uBTC Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uBTC_relationship_chart.png)
+![uBTC Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uBTC_relationship_chart.png)
 
 ## Statistical Summary
 
@@ -51,12 +51,12 @@ The scatter plot below shows the relationship between token amount and USDC retu
 
 ### USDC Return Statistics
 - **Count**: 11195
-- **Mean**: 663.7967
-- **Standard Deviation**: 234.4795
+- **Mean**: 663.7077
+- **Standard Deviation**: 234.4480
 - **Minimum**: 9.9305
-- **25th Percentile**: 498.0271
+- **25th Percentile**: 498.0267
 - **Median**: 498.3023
-- **75th Percentile**: 994.9526
+- **75th Percentile**: 994.9505
 - **Maximum**: 998.8732
 
 ## Interpretation

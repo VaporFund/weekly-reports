@@ -1,6 +1,6 @@
 # uAPT Price Analysis Report
 
-Generated on: 2025-05-30 22:08:26
+Generated on: 2025-05-30 22:11:38
 
 ## Overview
 
@@ -23,40 +23,40 @@ This report provides a comprehensive analysis of uAPT token price data including
 
 The following charts show the basic price trends for uAPT token amount and USDC return over time.
 
-![uAPT Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uAPT_price_charts.png)
+![uAPT Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uAPT_price_charts.png)
 
 ## Enhanced Trend Analysis
 
 These enhanced visualizations include trend lines and annotations highlighting minimum and maximum values.
 
-![uAPT Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uAPT_price_charts_with_trend.png)
+![uAPT Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uAPT_price_charts_with_trend.png)
 
 ## Correlation Analysis
 
 The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9948**.
 
-![uAPT Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uAPT_relationship_chart.png)
+![uAPT Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uAPT_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uAPT Token Amount Statistics
 - **Count**: 18300
-- **Mean**: 152.3896
-- **Standard Deviation**: 44.6026
+- **Mean**: 152.3845
+- **Standard Deviation**: 44.6078
 - **Minimum**: 1.8321
 - **25th Percentile**: 94.1348
-- **Median**: 183.0544
-- **75th Percentile**: 186.0020
+- **Median**: 183.0560
+- **75th Percentile**: 186.0163
 - **Maximum**: 269.3506
 
 ### USDC Return Statistics
 - **Count**: 18300
-- **Mean**: 798.6029
-- **Standard Deviation**: 234.6284
+- **Mean**: 798.5455
+- **Standard Deviation**: 234.6415
 - **Minimum**: 9.8617
-- **25th Percentile**: 491.6031
-- **Median**: 973.5485
-- **75th Percentile**: 978.7765
+- **25th Percentile**: 491.6001
+- **Median**: 973.5379
+- **75th Percentile**: 978.7741
 - **Maximum**: 1306.4625
 
 ## Interpretation

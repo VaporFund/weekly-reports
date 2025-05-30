@@ -1,6 +1,6 @@
 # uADA Price Analysis Report
 
-Generated on: 2025-05-30 22:07:49
+Generated on: 2025-05-30 22:11:01
 
 ## Overview
 
@@ -14,7 +14,7 @@ This report provides a comprehensive analysis of uADA token price data including
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 20210 |
+| **Data Points** | 20206 |
 | **Correlation Coefficient** | 0.9963 |
 | **Token Amount Range** | 12.88 - 1431.02 |
 | **USDC Return Range** | 9.86 - 1001.86 |
@@ -23,40 +23,40 @@ This report provides a comprehensive analysis of uADA token price data including
 
 The following charts show the basic price trends for uADA token amount and USDC return over time.
 
-![uADA Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uADA_price_charts.png)
+![uADA Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uADA_price_charts.png)
 
 ## Enhanced Trend Analysis
 
 These enhanced visualizations include trend lines and annotations highlighting minimum and maximum values.
 
-![uADA Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uADA_price_charts_with_trend.png)
+![uADA Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uADA_price_charts_with_trend.png)
 
 ## Correlation Analysis
 
 The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9963**.
 
-![uADA Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uADA_relationship_chart.png)
+![uADA Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uADA_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uADA Token Amount Statistics
-- **Count**: 20210
-- **Mean**: 1067.2786
-- **Standard Deviation**: 324.0688
+- **Count**: 20206
+- **Mean**: 1067.1754
+- **Standard Deviation**: 324.1265
 - **Minimum**: 12.8763
-- **25th Percentile**: 666.6314
-- **Median**: 1302.5826
-- **75th Percentile**: 1329.4497
+- **25th Percentile**: 666.6308
+- **Median**: 1302.6149
+- **75th Percentile**: 1329.5029
 - **Maximum**: 1431.0215
 
 ### USDC Return Statistics
-- **Count**: 20210
-- **Mean**: 793.3434
-- **Standard Deviation**: 241.9099
+- **Count**: 20206
+- **Mean**: 793.2319
+- **Standard Deviation**: 241.9352
 - **Minimum**: 9.8610
-- **25th Percentile**: 495.8285
-- **Median**: 985.5433
-- **75th Percentile**: 989.6046
+- **25th Percentile**: 495.8266
+- **Median**: 985.5377
+- **75th Percentile**: 989.6055
 - **Maximum**: 1001.8590
 
 ## Interpretation

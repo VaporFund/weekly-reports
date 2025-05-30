@@ -1,6 +1,6 @@
 # uXRP Price Analysis Report
 
-Generated on: 2025-05-30 22:07:55
+Generated on: 2025-05-30 22:11:07
 
 ## Overview
 
@@ -14,7 +14,7 @@ This report provides a comprehensive analysis of uXRP token price data including
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 20212 |
+| **Data Points** | 20206 |
 | **Correlation Coefficient** | 0.9974 |
 | **Token Amount Range** | 4.24 - 461.16 |
 | **USDC Return Range** | 9.86 - 1004.75 |
@@ -23,40 +23,40 @@ This report provides a comprehensive analysis of uXRP token price data including
 
 The following charts show the basic price trends for uXRP token amount and USDC return over time.
 
-![uXRP Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uXRP_price_charts.png)
+![uXRP Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uXRP_price_charts.png)
 
 ## Enhanced Trend Analysis
 
 These enhanced visualizations include trend lines and annotations highlighting minimum and maximum values.
 
-![uXRP Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uXRP_price_charts_with_trend.png)
+![uXRP Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uXRP_price_charts_with_trend.png)
 
 ## Correlation Analysis
 
 The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9974**.
 
-![uXRP Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uXRP_relationship_chart.png)
+![uXRP Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uXRP_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uXRP Token Amount Statistics
-- **Count**: 20212
-- **Mean**: 347.8281
-- **Standard Deviation**: 104.8822
+- **Count**: 20206
+- **Mean**: 347.7999
+- **Standard Deviation**: 104.8951
 - **Minimum**: 4.2358
-- **25th Percentile**: 218.3197
-- **Median**: 424.8831
-- **75th Percentile**: 432.1316
+- **25th Percentile**: 218.3164
+- **Median**: 424.8864
+- **75th Percentile**: 432.1331
 - **Maximum**: 461.1591
 
 ### USDC Return Statistics
-- **Count**: 20212
-- **Mean**: 796.5867
-- **Standard Deviation**: 244.0408
+- **Count**: 20206
+- **Mean**: 796.5032
+- **Standard Deviation**: 244.0584
 - **Minimum**: 9.8575
-- **25th Percentile**: 495.7001
-- **Median**: 989.8155
-- **75th Percentile**: 994.7605
+- **25th Percentile**: 495.6978
+- **Median**: 989.8068
+- **75th Percentile**: 994.7574
 - **Maximum**: 1004.7541
 
 ## Interpretation
