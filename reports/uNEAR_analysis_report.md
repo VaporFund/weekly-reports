@@ -1,6 +1,6 @@
 # uNEAR Price Analysis Report
 
-Generated on: 2025-05-30 21:53:10
+Generated on: 2025-05-30 22:07:44
 
 ## Overview
 
@@ -14,8 +14,8 @@ This report provides a comprehensive analysis of uNEAR token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 20568 |
-| **Correlation Coefficient** | 0.9948 |
+| **Data Points** | 20557 |
+| **Correlation Coefficient** | 0.9949 |
 | **Token Amount Range** | 3.49 - 382.45 |
 | **USDC Return Range** | 9.85 - 1005.86 |
 
@@ -23,47 +23,47 @@ This report provides a comprehensive analysis of uNEAR token price data includin
 
 The following charts show the basic price trends for uNEAR token amount and USDC return over time.
 
-![uNEAR Basic Price Charts](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uNEAR_price_charts.png)
+![uNEAR Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uNEAR_price_charts.png)
 
 ## Enhanced Trend Analysis
 
 These enhanced visualizations include trend lines and annotations highlighting minimum and maximum values.
 
-![uNEAR Enhanced Trend Charts](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uNEAR_price_charts_with_trend.png)
+![uNEAR Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uNEAR_price_charts_with_trend.png)
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9948**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9949**.
 
-![uNEAR Correlation Analysis](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uNEAR_relationship_chart.png)
+![uNEAR Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uNEAR_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uNEAR Token Amount Statistics
-- **Count**: 20568
-- **Mean**: 285.8920
-- **Standard Deviation**: 88.2453
+- **Count**: 20557
+- **Mean**: 285.7944
+- **Standard Deviation**: 88.3239
 - **Minimum**: 3.4912
 - **25th Percentile**: 177.8475
-- **Median**: 349.5653
-- **75th Percentile**: 356.9144
+- **Median**: 349.6691
+- **75th Percentile**: 356.9546
 - **Maximum**: 382.4482
 
 ### USDC Return Statistics
-- **Count**: 20568
-- **Mean**: 793.4421
-- **Standard Deviation**: 241.9480
+- **Count**: 20557
+- **Mean**: 792.9505
+- **Standard Deviation**: 242.0495
 - **Minimum**: 9.8454
-- **25th Percentile**: 495.3777
-- **Median**: 986.5014
-- **75th Percentile**: 989.7150
+- **25th Percentile**: 495.3724
+- **Median**: 986.4845
+- **75th Percentile**: 989.7060
 - **Maximum**: 1005.8554
 
 ## Interpretation
 
 ### Strong Correlation
 
-The correlation coefficient of 0.9948 indicates a strong positive relationship between token amount and USDC return.
+The correlation coefficient of 0.9949 indicates a strong positive relationship between token amount and USDC return.
 
 ---
 

@@ -1,6 +1,6 @@
 # uBTC Price Analysis Report
 
-Generated on: 2025-05-30 21:53:53
+Generated on: 2025-05-30 22:07:59
 
 ## Overview
 
@@ -14,7 +14,7 @@ This report provides a comprehensive analysis of uBTC token price data including
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 11200 |
+| **Data Points** | 11195 |
 | **Correlation Coefficient** | 0.9996 |
 | **Token Amount Range** | 0.00 - 0.01 |
 | **USDC Return Range** | 9.93 - 998.87 |
@@ -23,24 +23,24 @@ This report provides a comprehensive analysis of uBTC token price data including
 
 The following charts show the basic price trends for uBTC token amount and USDC return over time.
 
-![uBTC Basic Price Charts](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uBTC_price_charts.png)
+![uBTC Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uBTC_price_charts.png)
 
 ## Enhanced Trend Analysis
 
 These enhanced visualizations include trend lines and annotations highlighting minimum and maximum values.
 
-![uBTC Enhanced Trend Charts](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uBTC_price_charts_with_trend.png)
+![uBTC Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uBTC_price_charts_with_trend.png)
 
 ## Correlation Analysis
 
 The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9996**.
 
-![uBTC Correlation Analysis](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uBTC_relationship_chart.png)
+![uBTC Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uBTC_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uBTC Token Amount Statistics
-- **Count**: 11200
+- **Count**: 11195
 - **Mean**: 0.0061
 - **Standard Deviation**: 0.0022
 - **Minimum**: 0.0001
@@ -50,13 +50,13 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0093
 
 ### USDC Return Statistics
-- **Count**: 11200
-- **Mean**: 664.4785
-- **Standard Deviation**: 234.7202
+- **Count**: 11195
+- **Mean**: 663.7967
+- **Standard Deviation**: 234.4795
 - **Minimum**: 9.9305
-- **25th Percentile**: 498.0281
-- **Median**: 498.3036
-- **75th Percentile**: 994.9717
+- **25th Percentile**: 498.0271
+- **Median**: 498.3023
+- **75th Percentile**: 994.9526
 - **Maximum**: 998.8732
 
 ## Interpretation

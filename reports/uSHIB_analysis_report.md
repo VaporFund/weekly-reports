@@ -1,6 +1,6 @@
 # uSHIB Price Analysis Report
 
-Generated on: 2025-05-30 21:54:08
+Generated on: 2025-05-30 22:08:04
 
 ## Overview
 
@@ -14,8 +14,8 @@ This report provides a comprehensive analysis of uSHIB token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 18652 |
-| **Correlation Coefficient** | 0.9918 |
+| **Data Points** | 18648 |
+| **Correlation Coefficient** | 0.9919 |
 | **Token Amount Range** | 681082.29 - 70436782.94 |
 | **USDC Return Range** | 9.95 - 962.65 |
 
@@ -23,47 +23,47 @@ This report provides a comprehensive analysis of uSHIB token price data includin
 
 The following charts show the basic price trends for uSHIB token amount and USDC return over time.
 
-![uSHIB Basic Price Charts](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uSHIB_price_charts.png)
+![uSHIB Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uSHIB_price_charts.png)
 
 ## Enhanced Trend Analysis
 
 These enhanced visualizations include trend lines and annotations highlighting minimum and maximum values.
 
-![uSHIB Enhanced Trend Charts](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uSHIB_price_charts_with_trend.png)
+![uSHIB Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uSHIB_price_charts_with_trend.png)
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9918**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.9919**.
 
-![uSHIB Correlation Analysis](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uSHIB_relationship_chart.png)
+![uSHIB Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uSHIB_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uSHIB Token Amount Statistics
-- **Count**: 18652
-- **Mean**: 54349496.9410
-- **Standard Deviation**: 14992418.4278
+- **Count**: 18648
+- **Mean**: 54340008.1567
+- **Standard Deviation**: 15000265.2290
 - **Minimum**: 681082.2860
 - **25th Percentile**: 35117991.2078
-- **Median**: 63326283.0088
-- **75th Percentile**: 66371746.8134
+- **Median**: 63328973.8835
+- **75th Percentile**: 66385228.0673
 - **Maximum**: 70436782.9444
 
 ### USDC Return Statistics
-- **Count**: 18652
-- **Mean**: 756.4201
-- **Standard Deviation**: 210.7929
+- **Count**: 18648
+- **Mean**: 756.1609
+- **Standard Deviation**: 210.8468
 - **Minimum**: 9.9534
-- **25th Percentile**: 483.8183
-- **Median**: 906.7618
-- **75th Percentile**: 917.7094
+- **25th Percentile**: 483.8093
+- **Median**: 906.7337
+- **75th Percentile**: 917.6651
 - **Maximum**: 962.6534
 
 ## Interpretation
 
 ### Strong Correlation
 
-The correlation coefficient of 0.9918 indicates a strong positive relationship between token amount and USDC return.
+The correlation coefficient of 0.9919 indicates a strong positive relationship between token amount and USDC return.
 
 ---
 

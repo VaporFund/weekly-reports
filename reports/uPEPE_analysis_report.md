@@ -1,6 +1,6 @@
 # uPEPE Price Analysis Report
 
-Generated on: 2025-05-30 21:52:58
+Generated on: 2025-05-30 22:07:38
 
 ## Overview
 
@@ -14,8 +14,8 @@ This report provides a comprehensive analysis of uPEPE token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 19171 |
-| **Correlation Coefficient** | 0.8362 |
+| **Data Points** | 19176 |
+| **Correlation Coefficient** | 0.8361 |
 | **Token Amount Range** | 706271.67 - 77387421.20 |
 | **USDC Return Range** | 9.92 - 163.27 |
 
@@ -23,26 +23,26 @@ This report provides a comprehensive analysis of uPEPE token price data includin
 
 The following charts show the basic price trends for uPEPE token amount and USDC return over time.
 
-![uPEPE Basic Price Charts](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uPEPE_price_charts.png)
+![uPEPE Basic Price Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uPEPE_price_charts.png)
 
 ## Enhanced Trend Analysis
 
 These enhanced visualizations include trend lines and annotations highlighting minimum and maximum values.
 
-![uPEPE Enhanced Trend Charts](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uPEPE_price_charts_with_trend.png)
+![uPEPE Enhanced Trend Charts](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uPEPE_price_charts_with_trend.png)
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.8362**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.8361**.
 
-![uPEPE Correlation Analysis](https://raw.githubusercontent.com/elcolie/weekly_analysis_2/main/chart_images/uPEPE_relationship_chart.png)
+![uPEPE Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-report/main/chart_images/uPEPE_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uPEPE Token Amount Statistics
-- **Count**: 19171
-- **Mean**: 30203711.4671
-- **Standard Deviation**: 25615211.8097
+- **Count**: 19176
+- **Mean**: 30196855.0372
+- **Standard Deviation**: 25597586.7980
 - **Minimum**: 706271.6736
 - **25th Percentile**: 3076013.9789
 - **Median**: 35468170.6073
@@ -50,20 +50,20 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 77387421.1992
 
 ### USDC Return Statistics
-- **Count**: 19171
-- **Mean**: 108.8411
-- **Standard Deviation**: 54.4738
+- **Count**: 19176
+- **Mean**: 108.8644
+- **Standard Deviation**: 54.4751
 - **Minimum**: 9.9240
-- **25th Percentile**: 42.2290
-- **Median**: 149.2711
-- **75th Percentile**: 154.5803
+- **25th Percentile**: 42.2203
+- **Median**: 149.2762
+- **75th Percentile**: 154.5801
 - **Maximum**: 163.2661
 
 ## Interpretation
 
 ### Strong Correlation
 
-The correlation coefficient of 0.8362 indicates a strong positive relationship between token amount and USDC return.
+The correlation coefficient of 0.8361 indicates a strong positive relationship between token amount and USDC return.
 
 ---
 
