@@ -206,10 +206,31 @@ def make_pdf(symbol, basic_chart_figure, trend_lines_figure, correlation_analysi
 
     # This is bug. Must no ident in the content lines.
     content = f"""
-### Figure
+## Figure
+
+### Basic Line Charts
+Let's create two separate line charts for the token amount and USDC return.
+
 {_basic_chart}
+
+### Enhanced Visualization with Trend Lines
+Now let's create more detailed visualizations with trend lines and annotations.
+
 {_trend_lines_chart}
+
+### Correlation Analysis
+Let's analyze the relationship between token amount and USDC return. We'll create a scatter plot to visualize their relationship and calculate the correlation coefficient.
+
 {_correlation_analysis_chart}
+
+### uLINK Price Visualization
+This notebook visualizes the price data of uLINK token from the past hour. We'll create multiple interactive visualizations directly in the notebook:
+1. Basic line charts for both `ua_token_amount` and `odos_usdc_return`
+2. Enhanced line charts with trend lines and min/max annotations
+3. Scatter plot showing the relationship between token amount and USDC return
+4. Statistical analysis of the data
+
+All charts will display directly in the notebook cells when run.
     """
     pdf.add_section(Section(content, toc=False))
 
