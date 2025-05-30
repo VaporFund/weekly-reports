@@ -1,32 +1,37 @@
 """Original version from https://github.com/Chonlakant/MetaQuote/blob/main/plot_uLINK.ipynb"""
+import logging
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import numpy as np
+import numpy.linalg
 import pandas as pd
 from markdown_pdf import MarkdownPdf
 from markdown_pdf import Section
+from tqdm import tqdm
 
-from download_to_csv import main_download_csv
+from download_to_csv import main_download_csv, get_distinct_tokens
+
+logger = logging.getLogger(__name__)
 
 # Set figure aesthetics for better visualization
 plt.style.use('ggplot')
 
 # Set higher DPI for sharper in-notebook display
 plt.rcParams['figure.dpi'] = 100
-CSV_SOURCE = 'price_snapshots_usol.csv'
 folder = 'pdf_plot_output_figures'
-BASIC_CHART_FIGURE = f'{folder}/uLINK_price_charts.png'
-TREND_LINES_FIGURE = f'{folder}/uLINK_price_charts_with_trend.png'
-CORRELATION_ANALYSIS_FIGURE = f'{folder}/uLINK_relationship_chart.png'
+# CSV_SOURCE = 'price_snapshots_usol.csv'
+# BASIC_CHART_FIGURE = f'{folder}/uLINK_price_charts.png'
+# TREND_LINES_FIGURE = f'{folder}/uLINK_price_charts_with_trend.png'
+# CORRELATION_ANALYSIS_FIGURE = f'{folder}/uLINK_relationship_chart.png'
 
 
-def basic_charts() -> pd.DataFrame:
+def basic_charts(token: str, csv_source: str, basic_chart_figure: str) -> pd.DataFrame:
     """
     Basic Line Charts
     Let's create two separate line charts for the token amount and USDC return.
     """
     # Load the CSV data
-    df = pd.read_csv(CSV_SOURCE)
+    df = pd.read_csv(csv_source)
 
     # Display the first few rows to verify data loading
     print(f"Total rows: {len(df)}")
@@ -52,7 +57,7 @@ def basic_charts() -> pd.DataFrame:
     # Plot 1: ua_token_amount over time
     plt.subplot(2, 1, 1)
     plt.plot(df['timestamp'], df['ua_token_amount_readable'], color='blue', linewidth=2)
-    plt.title('uLINK Token Amount Over Time', fontsize=16)
+    plt.title(f'{token} Token Amount Over Time', fontsize=16)
     plt.ylabel('Token Amount', fontsize=14)
     plt.grid(True, alpha=0.3)
 
@@ -75,12 +80,12 @@ def basic_charts() -> pd.DataFrame:
     # Adjust layout
     plt.tight_layout()
     # Optional: save as image file
-    plt.savefig(BASIC_CHART_FIGURE, dpi=300)
+    plt.savefig(basic_chart_figure, dpi=300)
     plt.clf()
     return df
 
 
-def trend_lines(df: pd.DataFrame):
+def trend_lines(token: str, df: pd.DataFrame, trend_lines_figure: str):
     """
     Enhanced Visualization with Trend Lines
     Now let's create more detailed visualizations with trend lines and annotations.
@@ -98,7 +103,7 @@ def trend_lines(df: pd.DataFrame):
     p = np.poly1d(z)
     plt.plot(df['timestamp'], p(range(len(df))), "r--", linewidth=1, label='Trend Line')
 
-    plt.title('uLINK Token Amount Over Time', fontsize=16)
+    plt.title(f'{token} Token Amount Over Time', fontsize=16)
     plt.ylabel('Token Amount', fontsize=14)
     plt.grid(True, alpha=0.3)
     plt.legend()
@@ -152,11 +157,11 @@ def trend_lines(df: pd.DataFrame):
 
     plt.tight_layout()
     # Optional: save as image file
-    plt.savefig(TREND_LINES_FIGURE, dpi=300)
+    plt.savefig(trend_lines_figure, dpi=300)
     plt.clf()
 
 
-def correlation_analysis(df: pd.DataFrame):
+def correlation_analysis(token: str, df: pd.DataFrame, correlation_analysis_figure: str):
     """
     Correlation Analysis
     Let's analyze the relationship between token amount and USDC return. We'll create a scatter plot to visualize their relationship and calculate the correlation coefficient.
@@ -167,7 +172,7 @@ def correlation_analysis(df: pd.DataFrame):
     print(f"Correlation between token amount and USDC return: {correlation:.4f}")
 
     # Display basic statistics
-    print("\nStatistics for uLINK Token Amount:")
+    print(f"\nStatistics for {token} Token Amount:")
     display(df['ua_token_amount_readable'].describe())
 
     print("\nStatistics for USDC Return:")
@@ -188,39 +193,76 @@ def correlation_analysis(df: pd.DataFrame):
 
     plt.tight_layout()
     # Optional: save as image file
-    plt.savefig(CORRELATION_ANALYSIS_FIGURE, dpi=300)
+    plt.savefig(correlation_analysis_figure, dpi=300)
     plt.clf()
 
 
-def make_pdf():
+def make_pdf(symbol, basic_chart_figure, trend_lines_figure, correlation_analysis_figure):
     """Use markdown and generate the pdf."""
     pdf = MarkdownPdf(toc_level=2, optimize=True)
-    basic_chart = f"<img src='{BASIC_CHART_FIGURE}'/>"
-    trend_lines_chart = f"<img src='{TREND_LINES_FIGURE}'/>"
-    correlation_analysis_chart = f"<img src='{CORRELATION_ANALYSIS_FIGURE}'/>"
+    _basic_chart = f"<img src='{basic_chart_figure}'/>"
+    _trend_lines_chart = f"<img src='{trend_lines_figure}'/>"
+    _correlation_analysis_chart = f"<img src='{correlation_analysis_figure}'/>"
 
     # This is bug. Must no ident in the content lines.
     content = f"""
 ### Figure
-{basic_chart}
-{trend_lines_chart}
-{correlation_analysis_chart}
+{_basic_chart}
+{_trend_lines_chart}
+{_correlation_analysis_chart}
     """
     pdf.add_section(Section(content, toc=False))
 
     pdf.meta["title"] = "price chart"
     pdf.meta["author"] = "VapourFund"
-    pdf.save("price_chart.pdf")
+    pdf.save(f"price_chart_{symbol}.pdf")
+
+def remove_figures_and_csv():
+    """Remove all figures and CSV files."""
+    import os
+    import glob
+
+    # Remove all PNG files in the folder
+    png_files = glob.glob(f"{folder}/*.png")
+    for file in png_files:
+        os.remove(file)
+
+    # Remove all CSV files in the folder
+    csv_files = glob.glob("price_snapshots_*.csv")
+    for file in csv_files:
+        os.remove(file)
 
 
 def main():
-    # download to CSV
-    main_download_csv()
 
-    df = basic_charts()
-    trend_lines(df)
-    correlation_analysis(df)
-    make_pdf()
+    symbols = get_distinct_tokens()
+    for token_symbol in tqdm(symbols, desc="Processing tokens"):
+    # for token_symbol in ["uPEPE"]:
+        try:
+            # download to CSV
+            main_download_csv(token_symbol=token_symbol)
+            output_csv_file = f"price_snapshots_{token_symbol}.csv"
+
+            BASIC_CHART_FIGURE = f'{folder}/{token_symbol}_price_charts.png'
+            TREND_LINES_FIGURE = f'{folder}/{token_symbol}_price_charts_with_trend.png'
+            CORRELATION_ANALYSIS_FIGURE = f'{folder}/{token_symbol}_relationship_chart.png'
+
+            df = basic_charts(token=token_symbol, csv_source=output_csv_file, basic_chart_figure=BASIC_CHART_FIGURE)
+            trend_lines(token=token_symbol, df=df, trend_lines_figure=TREND_LINES_FIGURE)
+            correlation_analysis(token=token_symbol, df=df, correlation_analysis_figure=CORRELATION_ANALYSIS_FIGURE)
+            make_pdf(
+                symbol=token_symbol,
+                basic_chart_figure=BASIC_CHART_FIGURE,
+                trend_lines_figure=TREND_LINES_FIGURE,
+                correlation_analysis_figure=CORRELATION_ANALYSIS_FIGURE
+            )
+        except numpy.linalg.LinAlgError:
+            # uDODGE has only 1 record.
+            logger.error(token_symbol)
+        except FileNotFoundError:
+            # uPEPE has no record.
+            logger.error(f"File not found for token: {token_symbol}")
+    remove_figures_and_csv()
 
 
 if __name__ == "__main__":

@@ -1,4 +1,5 @@
 import os
+import typing as typ
 
 from dotenv import load_dotenv
 
@@ -10,8 +11,48 @@ password = os.getenv("PASSWORD")
 host = os.getenv("HOST")
 port = os.getenv("PORT")
 
+database_parameters = {
+    "dbname": dbname,
+    "user": dbuser,
+    "password": password,
+    "host": host,  # e.g., 'localhost' or an IP address
+    "port": port  # e.g., '5432' for PostgreSQL
+}
+
 import psycopg2
 import csv
+
+
+def get_distinct_tokens() -> typ.List[str] | None:
+    """
+    Queries distinct token symbols from the price_snapshots table.
+    Returns:
+        list: A list of distinct token symbols.
+    """
+    conn = None
+    tokens = []
+    try:
+        # Connect to the PostgreSQL database
+        conn = psycopg2.connect(**database_parameters)
+        cur = conn.cursor()
+
+        # Execute the query
+        query = "SELECT DISTINCT token_symbol FROM price_snapshots;"
+        cur.execute(query)
+
+        # Fetch all results
+        results = cur.fetchall()
+        tokens = [row[0] for row in results]
+
+    except (Exception, psycopg2.Error) as error:
+        print(f"Error while querying distinct tokens: {error}")
+    finally:
+        # Close the database connection
+        if conn:
+            cur.close()
+            conn.close()
+
+    return tokens
 
 
 def fetch_data_and_save_to_csv(db_params, sql_query, csv_filepath):
@@ -69,29 +110,20 @@ def fetch_data_and_save_to_csv(db_params, sql_query, csv_filepath):
             print("PostgreSQL connection is closed.")
 
 
-def main_download_csv():
+def main_download_csv(token_symbol):
     """Download the csv file."""
-    # --- Configuration ---
-    database_parameters = {
-        "dbname": dbname,
-        "user": dbuser,
-        "password": password,
-        "host": host,  # e.g., 'localhost' or an IP address
-        "port": port  # e.g., '5432' for PostgreSQL
-    }
-
     # The SQL query you provided
-    query = """
+    query = f"""
     SELECT *
     FROM price_snapshots
     WHERE "timestamp" >= NOW() - INTERVAL '168 hours'
-      AND token_symbol = 'uSOL'
+      AND token_symbol = '{token_symbol}'
       AND profit_percentage > 0
     ORDER BY token_symbol, "timestamp";
     """
 
     # Desired output CSV file path
-    output_csv_file = "price_snapshots_usol.csv"
+    output_csv_file = f"price_snapshots_{token_symbol}.csv"
 
     # --- Execute ---
     fetch_data_and_save_to_csv(database_parameters, query, output_csv_file)
