@@ -38,7 +38,7 @@ def basic_charts(token: str, csv_source: str, basic_chart_figure: str) -> pd.Dat
 
     # Data preprocessing
     # Convert timestamp to datetime
-    df['timestamp'] = pd.to_datetime(df['timestamp'])
+    df['timestamp'] = pd.to_datetime(df['timestamp'], format='ISO8601')
 
     # Convert ua_token_amount from string to float (it's in wei format with 18 decimals)
     df['ua_token_amount'] = df['ua_token_amount'].astype(float)

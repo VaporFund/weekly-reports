@@ -118,7 +118,6 @@ def main_download_csv(token_symbol):
     FROM price_snapshots
     WHERE "timestamp" >= NOW() - INTERVAL '168 hours'
       AND token_symbol = '{token_symbol}'
-      AND profit_percentage > 0
     ORDER BY token_symbol, "timestamp";
     """
 
