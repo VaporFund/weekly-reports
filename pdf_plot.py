@@ -235,7 +235,7 @@ Let's analyze the relationship between token amount and USDC return. We'll creat
     pdf.add_section(Section(content, toc=False))
 
     pdf.meta["title"] = "price chart"
-    pdf.meta["author"] = "VapourFund"
+    pdf.meta["author"] = "VaporFund"
     pdf.save(f"price_chart_{symbol}.pdf")
 
 def remove_figures_and_csv():

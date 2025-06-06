@@ -12,7 +12,7 @@ Universal Assets Arbitrage Strategy: Cross-DEX Opportunities
 
 ### Background
 
-Vaporfund had been running crypto business for two years but always felt one step behind the market. After months of research, she discovered a pattern in the pricing of Universal's tokenized assets across different DEXs.
+VaporFund had been running crypto business for two years but always felt one step behind the market. After months of research, she discovered a pattern in the pricing of Universal's tokenized assets across different DEXs.
 
 Arbi wallet:
 
@@ -34,7 +34,7 @@ The differences might seem minimal to casual traders, but to Arbi, ther represen
 
 Arbi's approach was methodical:
 
-1. **Infrastructure Setup:** He configured a 1-click arbitrage application at [https://arbi.vaporfund.com/](https://arbi.vaporfund.com/)
+1. **Infrastructure Setup:** He configured a 1-click arbitrage application at [https://arbi.VaporFund.com/](https://arbi.VaporFund.com/)
 1. **Auto-check setting:** Arbi use this setting for checking arbitrage opportunities
     * Input amount: 1000 USDC
     * Minimum profit threshold: 1.0%
@@ -66,7 +66,7 @@ Arbi recognized the risks in her strategy:
 1. **Divergence Risk:** If the underlying asset (e.g., native SOL) experienced a sudden price movement, the arbitrage window could close before execution completed.
 1. **Liquidity Risk:** Larger positions could face slippage, especially on newly launched assets.
 
-To mitigate these risks, Arbi implemented position sizing rules based on available liquidity which capture significant data from [https://wallet.vaporfund.com/liquidity-discovery](https://wallet.vaporfund.com/liquidity-discovery) and maintained reserve capital on each network to avoid unnecessary cross-chain transfers.
+To mitigate these risks, Arbi implemented position sizing rules based on available liquidity which capture significant data from [https://wallet.VaporFund.com/liquidity-discovery](https://wallet.VaporFund.com/liquidity-discovery) and maintained reserve capital on each network to avoid unnecessary cross-chain transfers.
 
 ### The Technology Edge
 
@@ -89,6 +89,6 @@ While the specific numbers and profits detailed in ther narrative are illustrati
 pdf.add_section(Section(weekly_analysis_no_2_markdown, toc=False))
 
 pdf.meta["title"] = "Weekly Analysis No.2"
-pdf.meta["author"] = "VapourFund"
+pdf.meta["author"] = "VaporFund"
 
 pdf.save("weekly_analysis_no2.pdf")
