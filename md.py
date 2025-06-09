@@ -43,16 +43,22 @@ def basic_charts(token: str, csv_source: str, basic_chart_figure: str) -> pd.Dat
 
     # Data preprocessing
     # Convert timestamp to datetime
-    df['timestamp'] = pd.to_datetime(df['timestamp'], format='ISO8601')
+    df['quoted_at'] = pd.to_datetime(df['quoted_at'], format='ISO8601')
 
     # Convert ua_token_amount from string to float (it's in wei format with 18 decimals)
-    df['ua_token_amount'] = df['ua_token_amount'].astype(float)
+    df['output_amount'] = df['output_amount'].astype(float)
 
     # Convert to a more readable format (divide by 10^18 to get the actual token amount)
-    df['ua_token_amount_readable'] = df['ua_token_amount'] / 1e18
+    df['output_amount_readable'] = df['output_amount'] / 1e18
+
+    # Convert ua_token_amount from string to float (it's in wei format with 18 decimals)
+    df['input_amount'] = df['input_amount'].astype(float)
+
+    # Convert to a more readable format (divide by 10^18 to get the actual token amount)
+    df['input_amount_readable'] = df['input_amount'] / 1e18
 
     # Sort by timestamp to ensure proper chronological order
-    df = df.sort_values('timestamp')
+    df = df.sort_values('quoted_at')
 
     # Basic Line Charts
     # Let's create two separate line charts for the token amount and USDC return.
@@ -61,7 +67,7 @@ def basic_charts(token: str, csv_source: str, basic_chart_figure: str) -> pd.Dat
 
     # Plot 1: ua_token_amount over time
     plt.subplot(2, 1, 1)
-    plt.plot(df['timestamp'], df['ua_token_amount_readable'], color='blue', linewidth=2)
+    plt.plot(df['quoted_at'], df['output_amount_readable'], color='blue', linewidth=2)
     plt.title(f'{token} Token Amount Over Time', fontsize=16)
     plt.ylabel('Token Amount', fontsize=14)
     plt.grid(True, alpha=0.3)
@@ -72,7 +78,7 @@ def basic_charts(token: str, csv_source: str, basic_chart_figure: str) -> pd.Dat
 
     # Plot 2: odos_usdc_return over time
     plt.subplot(2, 1, 2)
-    plt.plot(df['timestamp'], df['odos_usdc_return'], color='green', linewidth=2)
+    plt.plot(df['quoted_at'], df['output_amount_formatted'], color='green', linewidth=2)
     plt.title('USDC Return Value Over Time', fontsize=16)
     plt.xlabel('Time', fontsize=14)
     plt.ylabel('USDC Value', fontsize=14)
@@ -101,12 +107,12 @@ def trend_lines(token: str, df: pd.DataFrame, trend_lines_figure: str):
     # Plot with more detailed formatting
     # 1. ua_token_amount with trend line
     plt.subplot(2, 1, 1)
-    plt.plot(df['timestamp'], df['ua_token_amount_readable'], color='blue', linewidth=2, label='Token Amount')
+    plt.plot(df['quoted_at'], df['output_amount_readable'], color='blue', linewidth=2, label='Token Amount')
 
     # Add trend line
-    z = np.polyfit(range(len(df)), df['ua_token_amount_readable'], 1)
+    z = np.polyfit(range(len(df)), df['output_amount_readable'], 1)
     p = np.poly1d(z)
-    plt.plot(df['timestamp'], p(range(len(df))), "r--", linewidth=1, label='Trend Line')
+    plt.plot(df['quoted_at'], p(range(len(df))), "r--", linewidth=1, label='Trend Line')
 
     plt.title(f'{token} Token Amount Over Time', fontsize=16)
     plt.ylabel('Token Amount', fontsize=14)
@@ -114,15 +120,15 @@ def trend_lines(token: str, df: pd.DataFrame, trend_lines_figure: str):
     plt.legend()
 
     # Add annotations for min and max values
-    max_token_idx = df['ua_token_amount_readable'].idxmax()
-    min_token_idx = df['ua_token_amount_readable'].idxmin()
+    max_token_idx = df['output_amount_readable'].idxmax()
+    min_token_idx = df['output_amount_readable'].idxmin()
 
-    plt.annotate(f'Max: {df.loc[max_token_idx, "ua_token_amount_readable"]:.2f}',
-                 xy=(df.loc[max_token_idx, 'timestamp'], df.loc[max_token_idx, 'ua_token_amount_readable']),
+    plt.annotate(f'Max: {df.loc[max_token_idx, "output_amount_readable"]:.2f}',
+                 xy=(df.loc[max_token_idx, 'quoted_at'], df.loc[max_token_idx, 'output_amount_readable']),
                  xytext=(10, 10), textcoords='offset points', arrowprops=dict(arrowstyle='->'))
 
-    plt.annotate(f'Min: {df.loc[min_token_idx, "ua_token_amount_readable"]:.2f}',
-                 xy=(df.loc[min_token_idx, 'timestamp'], df.loc[min_token_idx, 'ua_token_amount_readable']),
+    plt.annotate(f'Min: {df.loc[min_token_idx, "output_amount_readable"]:.2f}',
+                 xy=(df.loc[min_token_idx, 'quoted_at'], df.loc[min_token_idx, 'output_amount_readable']),
                  xytext=(10, -20), textcoords='offset points', arrowprops=dict(arrowstyle='->'))
 
     # Format the x-axis
@@ -131,12 +137,12 @@ def trend_lines(token: str, df: pd.DataFrame, trend_lines_figure: str):
 
     # 2. odos_usdc_return with trend line
     plt.subplot(2, 1, 2)
-    plt.plot(df['timestamp'], df['odos_usdc_return'], color='green', linewidth=2, label='USDC Return')
+    plt.plot(df['quoted_at'], df['output_amount_formatted'], color='green', linewidth=2, label='USDC Return')
 
     # Add trend line
-    z = np.polyfit(range(len(df)), df['odos_usdc_return'], 1)
+    z = np.polyfit(range(len(df)), df['output_amount_formatted'], 1)
     p = np.poly1d(z)
-    plt.plot(df['timestamp'], p(range(len(df))), "r--", linewidth=1, label='Trend Line')
+    plt.plot(df['quoted_at'], p(range(len(df))), "r--", linewidth=1, label='Trend Line')
 
     plt.title('USDC Return Value Over Time', fontsize=16)
     plt.xlabel('Time', fontsize=14)
@@ -145,15 +151,15 @@ def trend_lines(token: str, df: pd.DataFrame, trend_lines_figure: str):
     plt.legend()
 
     # Add annotations for min and max values
-    max_usdc_idx = df['odos_usdc_return'].idxmax()
-    min_usdc_idx = df['odos_usdc_return'].idxmin()
+    max_usdc_idx = df['output_amount_formatted'].idxmax()
+    min_usdc_idx = df['output_amount_formatted'].idxmin()
 
-    plt.annotate(f'Max: {df.loc[max_usdc_idx, "odos_usdc_return"]:.2f}',
-                 xy=(df.loc[max_usdc_idx, 'timestamp'], df.loc[max_usdc_idx, 'odos_usdc_return']),
+    plt.annotate(f'Max: {df.loc[max_usdc_idx, "output_amount_formatted"]:.2f}',
+                 xy=(df.loc[max_usdc_idx, 'quoted_at'], df.loc[max_usdc_idx, 'output_amount_formatted']),
                  xytext=(10, 10), textcoords='offset points', arrowprops=dict(arrowstyle='->'))
 
-    plt.annotate(f'Min: {df.loc[min_usdc_idx, "odos_usdc_return"]:.2f}',
-                 xy=(df.loc[min_usdc_idx, 'timestamp'], df.loc[min_usdc_idx, 'odos_usdc_return']),
+    plt.annotate(f'Min: {df.loc[min_usdc_idx, "output_amount_formatted"]:.2f}',
+                 xy=(df.loc[min_usdc_idx, 'quoted_at'], df.loc[min_usdc_idx, 'output_amount_formatted']),
                  xytext=(10, -20), textcoords='offset points', arrowprops=dict(arrowstyle='->'))
 
     # Format the x-axis
@@ -173,28 +179,28 @@ def correlation_analysis(token: str, df: pd.DataFrame, correlation_analysis_figu
     We'll create a scatter plot to visualize their relationship and calculate the correlation coefficient.
     """
     # Correlation analysis
-    correlation = df['ua_token_amount_readable'].corr(df['odos_usdc_return'])
+    correlation = df['input_amount_readable'].corr(df['output_amount_formatted'])
     print(f"Correlation between token amount and USDC return: {correlation:.4f}")
 
     # Display basic statistics
     print(f"\nStatistics for {token} Token Amount:")
-    print(df['ua_token_amount_readable'].describe())
+    print(df['input_amount_readable'].describe())
 
     print("\nStatistics for USDC Return:")
-    print(df['odos_usdc_return'].describe())
+    print(df['output_amount_formatted'].describe())
 
     # Plot the relationship between token amount and USDC return
     plt.figure(figsize=(10, 6))
-    plt.scatter(df['ua_token_amount_readable'], df['odos_usdc_return'], alpha=0.5)
+    plt.scatter(df['input_amount_readable'], df['output_amount_formatted'], alpha=0.5)
     plt.title('Relationship Between Token Amount and USDC Return', fontsize=16)
     plt.xlabel('Token Amount', fontsize=14)
     plt.ylabel('USDC Return', fontsize=14)
     plt.grid(True, alpha=0.3)
 
     # Add trend line
-    z = np.polyfit(df['ua_token_amount_readable'], df['odos_usdc_return'], 1)
+    z = np.polyfit(df['input_amount_readable'], df['output_amount_formatted'], 1)
     p = np.poly1d(z)
-    plt.plot(df['ua_token_amount_readable'], p(df['ua_token_amount_readable']), "r--")
+    plt.plot(df['input_amount_readable'], p(df['output_amount_formatted']), "r--")
 
     plt.tight_layout()
     # Save as image file
@@ -216,8 +222,8 @@ def generate_markdown_report(symbol, basic_chart_figure, trend_lines_figure, cor
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     # Calculate statistics
-    token_stats = df['ua_token_amount_readable'].describe()
-    usdc_stats = df['odos_usdc_return'].describe()
+    token_stats = df['input_amount_readable'].describe()
+    usdc_stats = df['output_amount_formatted'].describe()
     
     markdown_content = f"""# {symbol} Price Analysis Report
 
@@ -373,7 +379,7 @@ def main():
         try:
             # Download to CSV
             main_download_csv(token_symbol=token_symbol)
-            output_csv_file = f"price_snapshots_{token_symbol}.csv"
+            output_csv_file = f"quotes_{token_symbol}.csv"
 
             # Define image file paths
             BASIC_CHART_FIGURE = f'{folder}/{token_symbol}_price_charts.png'
@@ -398,18 +404,18 @@ def main():
             processed_tokens.append(token_symbol)
             
         except numpy.linalg.LinAlgError:
-            logger.error(f"Linear algebra error for token: {token_symbol}")
+            logger.error(f"ERROR: Linear algebra error for token: {token_symbol}")
         except FileNotFoundError:
-            logger.error(f"File not found for token: {token_symbol}")
+            logger.error(f"ERROR: File not found for token: {token_symbol}")
         except Exception as e:
-            logger.error(f"Error processing token {token_symbol}: {str(e)}")
+            logger.error(f"ERROR: Error processing token {token_symbol}: {str(e)}")
     
     # Generate index file
     if processed_tokens:
         generate_index_markdown(processed_tokens)
     
     # Clean up temporary files
-    remove_temp_files()
+    # remove_temp_files()
     
     print(f"\n✅ Processing complete!")
     print(f"📊 Generated reports for {len(processed_tokens)} tokens")

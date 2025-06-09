@@ -37,7 +37,7 @@ def get_distinct_tokens() -> typ.List[str] | None:
         cur = conn.cursor()
 
         # Execute the query
-        query = "SELECT DISTINCT token_symbol FROM price_snapshots;"
+        query = "SELECT DISTINCT output_token_symbol FROM quotes;"
         cur.execute(query)
 
         # Fetch all results
@@ -115,14 +115,15 @@ def main_download_csv(token_symbol):
     # The SQL query you provided
     query = f"""
     SELECT *
-    FROM price_snapshots
-    WHERE "timestamp" >= NOW() - INTERVAL '168 hours'
-      AND token_symbol = '{token_symbol}'
-    ORDER BY token_symbol, "timestamp";
+    FROM quotes
+    WHERE "quoted_at" >= NOW() - INTERVAL '24 hours'
+      AND output_token_symbol = '{token_symbol}' 
+      AND input_amount = 1000000000 
+    ORDER BY output_token_symbol, "quoted_at";
     """
 
     # Desired output CSV file path
-    output_csv_file = f"price_snapshots_{token_symbol}.csv"
+    output_csv_file = f"quotes_{token_symbol}.csv"
 
     # --- Execute ---
     fetch_data_and_save_to_csv(database_parameters, query, output_csv_file)
