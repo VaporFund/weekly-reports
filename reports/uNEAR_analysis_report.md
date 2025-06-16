@@ -1,6 +1,6 @@
 # uNEAR Price Analysis Report
 
-Generated on: 2025-06-09 11:13:41
+Generated on: 2025-06-16 13:36:02
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uNEAR token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 7566 |
+| **Data Points** | 4976 |
 | **Correlation Coefficient** | -0.0000 |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 404211083942268.38 - 419535008775800.19 |
+| **USDC Return Range** | 433510640997502.31 - 659459804050986.75 |
 
 ## Basic Price Charts
 
@@ -40,7 +40,7 @@ The scatter plot below shows the relationship between token amount and USDC retu
 ## Statistical Summary
 
 ### uNEAR Token Amount Statistics
-- **Count**: 7566
+- **Count**: 4976
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,14 +50,14 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 7566
-- **Mean**: 411913159857432.0000
-- **Standard Deviation**: 3275151960134.8828
-- **Minimum**: 404211083942268.3750
-- **25th Percentile**: 408948746140958.3750
-- **Median**: 411830434185524.7500
-- **75th Percentile**: 414407708362884.5625
-- **Maximum**: 419535008775800.1875
+- **Count**: 4976
+- **Mean**: 447019755013851.8750
+- **Standard Deviation**: 5594987385673.7617
+- **Minimum**: 433510640997502.3125
+- **25th Percentile**: 445276723146633.2500
+- **Median**: 447201076739406.6875
+- **75th Percentile**: 449403714611385.1250
+- **Maximum**: 659459804050986.7500
 
 ## Interpretation
 

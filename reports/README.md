@@ -1,6 +1,6 @@
 # Price Analysis Reports Index
 
-Generated on: 2025-06-09 11:14:40
+Generated on: 2025-06-16 13:36:28
 
 ## Available Reports
 
@@ -8,19 +8,19 @@ This index contains links to all generated price analysis reports.
 
 | Token | Report Link | Charts |
 |-------|-------------|--------|
-| **uDOGE** | [uDOGE Analysis Report](./uDOGE_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **uPEPE** | [uPEPE Analysis Report](./uPEPE_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **uNEAR** | [uNEAR Analysis Report](./uNEAR_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
 | **uADA** | [uADA Analysis Report](./uADA_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **uBTC** | [uBTC Analysis Report](./uBTC_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **uXRP** | [uXRP Analysis Report](./uXRP_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **uSHIB** | [uSHIB Analysis Report](./uSHIB_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **uLINK** | [uLINK Analysis Report](./uLINK_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **uSOL** | [uSOL Analysis Report](./uSOL_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
 | **uAPT** | [uAPT Analysis Report](./uAPT_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **uSEI** | [uSEI Analysis Report](./uSEI_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
-| **USUI** | [USUI Analysis Report](./USUI_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
 | **uBERA** | [uBERA Analysis Report](./uBERA_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uBTC** | [uBTC Analysis Report](./uBTC_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uDOGE** | [uDOGE Analysis Report](./uDOGE_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uLINK** | [uLINK Analysis Report](./uLINK_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uNEAR** | [uNEAR Analysis Report](./uNEAR_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uPEPE** | [uPEPE Analysis Report](./uPEPE_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uSEI** | [uSEI Analysis Report](./uSEI_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uSHIB** | [uSHIB Analysis Report](./uSHIB_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uSOL** | [uSOL Analysis Report](./uSOL_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **USUI** | [USUI Analysis Report](./USUI_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
+| **uXRP** | [uXRP Analysis Report](./uXRP_analysis_report.md) | [Charts](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images) |
 
 
 ## Summary

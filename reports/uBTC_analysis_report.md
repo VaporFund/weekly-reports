@@ -1,6 +1,6 @@
 # uBTC Price Analysis Report
 
-Generated on: 2025-06-09 11:13:51
+Generated on: 2025-06-16 13:35:49
 
 ## Overview
 
@@ -14,8 +14,8 @@ This report provides a comprehensive analysis of uBTC token price data including
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 4282 |
-| **Correlation Coefficient** | nan |
+| **Data Points** | 989 |
+| **Correlation Coefficient** | 0.0000 |
 | **Token Amount Range** | 0.00 - 0.00 |
 | **USDC Return Range** | 0.01 - 0.01 |
 
@@ -33,14 +33,14 @@ These enhanced visualizations include trend lines and annotations highlighting m
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **nan**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.0000**.
 
 ![uBTC Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uBTC_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uBTC Token Amount Statistics
-- **Count**: 4282
+- **Count**: 989
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,20 +50,20 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 4282
-- **Mean**: 0.0094
+- **Count**: 989
+- **Mean**: 0.0095
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0094
-- **25th Percentile**: 0.0094
-- **Median**: 0.0094
-- **75th Percentile**: 0.0094
+- **25th Percentile**: 0.0095
+- **Median**: 0.0095
+- **75th Percentile**: 0.0095
 - **Maximum**: 0.0095
 
 ## Interpretation
 
 ### Weak Correlation
 
-The correlation coefficient of nan indicates a weak negative relationship between token amount and USDC return.
+The correlation coefficient of 0.0000 indicates a weak positive relationship between token amount and USDC return.
 
 ---
 

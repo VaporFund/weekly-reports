@@ -1,6 +1,6 @@
 # uSHIB Price Analysis Report
 
-Generated on: 2025-06-09 11:14:02
+Generated on: 2025-06-16 13:36:15
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uSHIB token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 7601 |
-| **Correlation Coefficient** | -0.0000 |
+| **Data Points** | 5018 |
+| **Correlation Coefficient** | nan |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 77957794.24 - 80255931.57 |
+| **USDC Return Range** | 80576499.13 - 123482034.47 |
 
 ## Basic Price Charts
 
@@ -33,14 +33,14 @@ These enhanced visualizations include trend lines and annotations highlighting m
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **-0.0000**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **nan**.
 
 ![uSHIB Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uSHIB_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uSHIB Token Amount Statistics
-- **Count**: 7601
+- **Count**: 5018
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,20 +50,20 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 7601
-- **Mean**: 78992559.1550
-- **Standard Deviation**: 497300.6624
-- **Minimum**: 77957794.2421
-- **25th Percentile**: 78547011.8954
-- **Median**: 78982437.0867
-- **75th Percentile**: 79350827.8934
-- **Maximum**: 80255931.5740
+- **Count**: 5018
+- **Mean**: 82953078.1016
+- **Standard Deviation**: 861089.6882
+- **Minimum**: 80576499.1343
+- **25th Percentile**: 82635541.2663
+- **Median**: 82946596.0946
+- **75th Percentile**: 83463601.0604
+- **Maximum**: 123482034.4700
 
 ## Interpretation
 
 ### Weak Correlation
 
-The correlation coefficient of -0.0000 indicates a weak negative relationship between token amount and USDC return.
+The correlation coefficient of nan indicates a weak negative relationship between token amount and USDC return.
 
 ---
 

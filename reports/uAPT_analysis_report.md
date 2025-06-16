@@ -1,6 +1,6 @@
 # uAPT Price Analysis Report
 
-Generated on: 2025-06-09 11:14:21
+Generated on: 2025-06-16 13:35:42
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uAPT token price data including
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 7587 |
-| **Correlation Coefficient** | 0.0000 |
+| **Data Points** | 4989 |
+| **Correlation Coefficient** | -0.0000 |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 203.32 - 215.58 |
+| **USDC Return Range** | 209.58 - 318.39 |
 
 ## Basic Price Charts
 
@@ -33,14 +33,14 @@ These enhanced visualizations include trend lines and annotations highlighting m
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.0000**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **-0.0000**.
 
 ![uAPT Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uAPT_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uAPT Token Amount Statistics
-- **Count**: 7587
+- **Count**: 4989
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,20 +50,20 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 7587
-- **Mean**: 208.7735
-- **Standard Deviation**: 2.7040
-- **Minimum**: 203.3187
-- **25th Percentile**: 206.1768
-- **Median**: 209.2387
-- **75th Percentile**: 211.0119
-- **Maximum**: 215.5792
+- **Count**: 4989
+- **Mean**: 216.5430
+- **Standard Deviation**: 3.6417
+- **Minimum**: 209.5829
+- **25th Percentile**: 214.6968
+- **Median**: 215.7769
+- **75th Percentile**: 217.7465
+- **Maximum**: 318.3862
 
 ## Interpretation
 
 ### Weak Correlation
 
-The correlation coefficient of 0.0000 indicates a weak positive relationship between token amount and USDC return.
+The correlation coefficient of -0.0000 indicates a weak negative relationship between token amount and USDC return.
 
 ---
 

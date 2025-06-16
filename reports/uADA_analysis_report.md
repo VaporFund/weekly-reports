@@ -1,6 +1,6 @@
 # uADA Price Analysis Report
 
-Generated on: 2025-06-09 11:13:46
+Generated on: 2025-06-16 13:35:37
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uADA token price data including
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 7553 |
+| **Data Points** | 4972 |
 | **Correlation Coefficient** | -0.0000 |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 1465101663480067.00 - 1525932451101194.00 |
+| **USDC Return Range** | 1532751539778911.50 - 2359093675116539.00 |
 
 ## Basic Price Charts
 
@@ -40,7 +40,7 @@ The scatter plot below shows the relationship between token amount and USDC retu
 ## Statistical Summary
 
 ### uADA Token Amount Statistics
-- **Count**: 7553
+- **Count**: 4972
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,14 +50,14 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 7553
-- **Mean**: 1493461875853460.5000
-- **Standard Deviation**: 14581684108911.0449
-- **Minimum**: 1465101663480067.0000
-- **25th Percentile**: 1480725621459769.5000
-- **Median**: 1492536464458571.0000
-- **75th Percentile**: 1506430158147354.0000
-- **Maximum**: 1525932451101194.0000
+- **Count**: 4972
+- **Mean**: 1583555370396243.5000
+- **Standard Deviation**: 18708436588133.8828
+- **Minimum**: 1532751539778911.5000
+- **25th Percentile**: 1578479341656832.2500
+- **Median**: 1586075807753214.2500
+- **75th Percentile**: 1593327863553888.7500
+- **Maximum**: 2359093675116539.0000
 
 ## Interpretation
 

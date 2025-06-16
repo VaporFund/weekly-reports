@@ -1,6 +1,6 @@
 # uBERA Price Analysis Report
 
-Generated on: 2025-06-09 11:14:40
+Generated on: 2025-06-16 13:35:45
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uBERA token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 4289 |
+| **Data Points** | 992 |
 | **Correlation Coefficient** | 0.0000 |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 413685164164763.12 - 430277188405507.25 |
+| **USDC Return Range** | 484777920391498.38 - 504060429686868.19 |
 
 ## Basic Price Charts
 
@@ -40,7 +40,7 @@ The scatter plot below shows the relationship between token amount and USDC retu
 ## Statistical Summary
 
 ### uBERA Token Amount Statistics
-- **Count**: 4289
+- **Count**: 992
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,14 +50,14 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 4289
-- **Mean**: 421390360274933.3750
-- **Standard Deviation**: 3207968474608.7441
-- **Minimum**: 413685164164763.1250
-- **25th Percentile**: 418477357493172.0000
-- **Median**: 421412694821806.0625
-- **75th Percentile**: 423670852917375.3750
-- **Maximum**: 430277188405507.2500
+- **Count**: 992
+- **Mean**: 501134449860477.1250
+- **Standard Deviation**: 1898569499113.0894
+- **Minimum**: 484777920391498.3750
+- **25th Percentile**: 499526784381418.8750
+- **Median**: 501748657838607.0625
+- **75th Percentile**: 502548115738564.5625
+- **Maximum**: 504060429686868.1875
 
 ## Interpretation
 

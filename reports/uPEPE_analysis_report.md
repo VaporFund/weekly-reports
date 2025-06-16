@@ -1,6 +1,6 @@
 # uPEPE Price Analysis Report
 
-Generated on: 2025-06-09 11:13:36
+Generated on: 2025-06-16 13:36:07
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uPEPE token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 3216 |
-| **Correlation Coefficient** | 0.0000 |
+| **Data Points** | 3925 |
+| **Correlation Coefficient** | -0.0000 |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 4710865.39 - 4710865.40 |
+| **USDC Return Range** | 1798599.56 - 1798599.56 |
 
 ## Basic Price Charts
 
@@ -33,14 +33,14 @@ These enhanced visualizations include trend lines and annotations highlighting m
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.0000**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **-0.0000**.
 
 ![uPEPE Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uPEPE_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uPEPE Token Amount Statistics
-- **Count**: 3216
+- **Count**: 3925
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,20 +50,20 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 3216
-- **Mean**: 4710865.3960
+- **Count**: 3925
+- **Mean**: 1798599.5614
 - **Standard Deviation**: 0.0002
-- **Minimum**: 4710865.3884
-- **25th Percentile**: 4710865.3960
-- **Median**: 4710865.3961
-- **75th Percentile**: 4710865.3961
-- **Maximum**: 4710865.3961
+- **Minimum**: 1798599.5581
+- **25th Percentile**: 1798599.5614
+- **Median**: 1798599.5615
+- **75th Percentile**: 1798599.5615
+- **Maximum**: 1798599.5618
 
 ## Interpretation
 
 ### Weak Correlation
 
-The correlation coefficient of 0.0000 indicates a weak positive relationship between token amount and USDC return.
+The correlation coefficient of -0.0000 indicates a weak negative relationship between token amount and USDC return.
 
 ---
 

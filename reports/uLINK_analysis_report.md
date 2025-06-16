@@ -1,6 +1,6 @@
 # uLINK Price Analysis Report
 
-Generated on: 2025-06-09 11:14:07
+Generated on: 2025-06-16 13:35:58
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uLINK token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 7584 |
+| **Data Points** | 4984 |
 | **Correlation Coefficient** | 0.0000 |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 71.21 - 73.55 |
+| **USDC Return Range** | 73.07 - 112.93 |
 
 ## Basic Price Charts
 
@@ -40,7 +40,7 @@ The scatter plot below shows the relationship between token amount and USDC retu
 ## Statistical Summary
 
 ### uLINK Token Amount Statistics
-- **Count**: 7584
+- **Count**: 4984
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,14 +50,14 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 7584
-- **Mean**: 72.4298
-- **Standard Deviation**: 0.4462
-- **Minimum**: 71.2112
-- **25th Percentile**: 72.1579
-- **Median**: 72.4617
-- **75th Percentile**: 72.6920
-- **Maximum**: 73.5501
+- **Count**: 4984
+- **Mean**: 75.6337
+- **Standard Deviation**: 0.9723
+- **Minimum**: 73.0733
+- **25th Percentile**: 75.4279
+- **Median**: 75.7758
+- **75th Percentile**: 76.2039
+- **Maximum**: 112.9330
 
 ## Interpretation
 

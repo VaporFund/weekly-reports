@@ -1,6 +1,6 @@
 # uXRP Price Analysis Report
 
-Generated on: 2025-06-09 11:13:56
+Generated on: 2025-06-16 13:36:28
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uXRP token price data including
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 7546 |
-| **Correlation Coefficient** | 0.0000 |
+| **Data Points** | 4982 |
+| **Correlation Coefficient** | nan |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 433711945146206.88 - 462129818479244.94 |
+| **USDC Return Range** | 455290616153557.81 - 685909544355620.38 |
 
 ## Basic Price Charts
 
@@ -33,14 +33,14 @@ These enhanced visualizations include trend lines and annotations highlighting m
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.0000**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **nan**.
 
 ![uXRP Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uXRP_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uXRP Token Amount Statistics
-- **Count**: 7546
+- **Count**: 4982
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,20 +50,20 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 7546
-- **Mean**: 444046205312057.5625
-- **Standard Deviation**: 7152054471986.8545
-- **Minimum**: 433711945146206.8750
-- **25th Percentile**: 437742699243250.6875
-- **Median**: 442025483490820.0625
-- **75th Percentile**: 450663845048347.6875
-- **Maximum**: 462129818479244.9375
+- **Count**: 4982
+- **Mean**: 462058083608750.9375
+- **Standard Deviation**: 4135911916271.3477
+- **Minimum**: 455290616153557.8125
+- **25th Percentile**: 460671154230562.8750
+- **Median**: 462052290060189.0625
+- **75th Percentile**: 463570652468273.1875
+- **Maximum**: 685909544355620.3750
 
 ## Interpretation
 
 ### Weak Correlation
 
-The correlation coefficient of 0.0000 indicates a weak positive relationship between token amount and USDC return.
+The correlation coefficient of nan indicates a weak negative relationship between token amount and USDC return.
 
 ---
 

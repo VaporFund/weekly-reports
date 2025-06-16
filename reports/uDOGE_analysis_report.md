@@ -1,6 +1,6 @@
 # uDOGE Price Analysis Report
 
-Generated on: 2025-06-09 11:13:31
+Generated on: 2025-06-16 13:35:53
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of uDOGE token price data includin
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 7601 |
-| **Correlation Coefficient** | -0.0000 |
+| **Data Points** | 5073 |
+| **Correlation Coefficient** | nan |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 5325.05 - 5505.06 |
+| **USDC Return Range** | 5555.55 - 6818.46 |
 
 ## Basic Price Charts
 
@@ -33,14 +33,14 @@ These enhanced visualizations include trend lines and annotations highlighting m
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **-0.0000**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **nan**.
 
 ![uDOGE Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/uDOGE_relationship_chart.png)
 
 ## Statistical Summary
 
 ### uDOGE Token Amount Statistics
-- **Count**: 7601
+- **Count**: 5073
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,20 +50,20 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 7601
-- **Mean**: 5416.5588
-- **Standard Deviation**: 34.0306
-- **Minimum**: 5325.0532
-- **25th Percentile**: 5394.3767
-- **Median**: 5415.7605
-- **75th Percentile**: 5440.1142
-- **Maximum**: 5505.0636
+- **Count**: 5073
+- **Mean**: 5694.1978
+- **Standard Deviation**: 47.2304
+- **Minimum**: 5555.5472
+- **25th Percentile**: 5666.4293
+- **Median**: 5695.3184
+- **75th Percentile**: 5721.8980
+- **Maximum**: 6818.4588
 
 ## Interpretation
 
 ### Weak Correlation
 
-The correlation coefficient of -0.0000 indicates a weak negative relationship between token amount and USDC return.
+The correlation coefficient of nan indicates a weak negative relationship between token amount and USDC return.
 
 ---
 

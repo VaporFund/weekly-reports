@@ -1,6 +1,6 @@
 # USUI Price Analysis Report
 
-Generated on: 2025-06-09 11:14:36
+Generated on: 2025-06-16 13:36:24
 
 ## Overview
 
@@ -14,10 +14,10 @@ This report provides a comprehensive analysis of USUI token price data including
 
 | Metric | Value |
 |--------|-------|
-| **Data Points** | 7567 |
-| **Correlation Coefficient** | 0.0000 |
+| **Data Points** | 4954 |
+| **Correlation Coefficient** | nan |
 | **Token Amount Range** | 0.00 - 0.00 |
-| **USDC Return Range** | 304.52 - 312850694915739.88 |
+| **USDC Return Range** | 322.24 - 337739958374373.12 |
 
 ## Basic Price Charts
 
@@ -33,14 +33,14 @@ These enhanced visualizations include trend lines and annotations highlighting m
 
 ## Correlation Analysis
 
-The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **0.0000**.
+The scatter plot below shows the relationship between token amount and USDC return, with a correlation coefficient of **nan**.
 
 ![USUI Correlation Analysis](https://raw.githubusercontent.com/VaporFund/weekly-reports/main/chart_images/USUI_relationship_chart.png)
 
 ## Statistical Summary
 
 ### USUI Token Amount Statistics
-- **Count**: 7567
+- **Count**: 4954
 - **Mean**: 0.0000
 - **Standard Deviation**: 0.0000
 - **Minimum**: 0.0000
@@ -50,20 +50,20 @@ The scatter plot below shows the relationship between token amount and USDC retu
 - **Maximum**: 0.0000
 
 ### USDC Return Statistics
-- **Count**: 7567
-- **Mean**: 174684602692113.1562
-- **Standard Deviation**: 152816279923037.2812
-- **Minimum**: 304.5236
-- **25th Percentile**: 310.7571
-- **Median**: 305306167484213.4375
-- **75th Percentile**: 308792646863696.7500
-- **Maximum**: 312850694915739.8750
+- **Count**: 4954
+- **Mean**: 66691111006306.2109
+- **Standard Deviation**: 133633942389026.7500
+- **Minimum**: 322.2433
+- **25th Percentile**: 330.9234
+- **Median**: 334.1461
+- **75th Percentile**: 337.3360
+- **Maximum**: 337739958374373.1250
 
 ## Interpretation
 
 ### Weak Correlation
 
-The correlation coefficient of 0.0000 indicates a weak positive relationship between token amount and USDC return.
+The correlation coefficient of nan indicates a weak negative relationship between token amount and USDC return.
 
 ---
 
